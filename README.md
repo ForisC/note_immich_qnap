@@ -36,6 +36,20 @@ wget -O .env https://github.com/immich-app/immich/releases/latest/download/examp
 ```
 
 
+setup default nginx server
+```
+server {
+    listen 8879 default_server;
+    server_name _; # 匹配所有域名
+
+    # 针对未匹配的请求进行适当的处理，例如返回一个默认页面或错误页面
+    location / {
+        return 404;
+    }
+}
+```
+
+
 ref. 
 
 https://www.alvinchen.club/2018/11/06/reverse-proxy-on-nginx-docker-%E4%BD%BF%E7%94%A8qnap-container-station/
