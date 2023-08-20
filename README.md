@@ -34,3 +34,8 @@ wget https://github.com/immich-app/immich/releases/latest/download/docker-compos
 ```
 wget -O .env https://github.com/immich-app/immich/releases/latest/download/example.env
 ```
+
+
+ref. 
+
+https://www.alvinchen.club/2018/11/06/reverse-proxy-on-nginx-docker-%E4%BD%BF%E7%94%A8qnap-container-station/
